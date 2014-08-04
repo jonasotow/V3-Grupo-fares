@@ -2,10 +2,18 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="http://grupofares.com.mx/favicon.ico" />
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
-	<title>Grupo Fares</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="shortcut icon" href="http://grupofares.com.mx/favicon.ico" />
+	<title>Grupo Fares</title>
+
+
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  
 
 </head>
 <body>
@@ -33,44 +41,42 @@
 
 	<main>
 		<section class="contenido">
-			<article class="imgtext">
-				<div class="box">					
-					<figure class="relative">
-						<img src="static/image/img/img4.jpg">
-						<div class="text">Compruebe nuestro servicios, el cliente nuestro mayor compromiso.</div>
-					</figure>
-				</div>
-			</article>
-			<article class="imgtext">
-				<div class="box">					
-					<figure class="relative">
-						<img src="static/image/img/img5.jpg">
-						<div class="text">Ser un excelente lugar para trabajar, en donde nuestro personal se inspire para dar lo mejor de sí.</div>
-					</figure>
-				</div>
-			</article>	
-
+			<div id="slides">
+				<article class="imgtext">
+					<div class="box">					
+						<figure class="relative">
+							<img src="static/image/img/img4.jpg">
+							<div class="text">Compruebe nuestro servicios, el cliente nuestro mayor compromiso.</div>
+						</figure>
+					</div>
+				</article>
+				<article class="imgtext">
+					<div class="box">					
+						<figure class="relative">
+							<img src="static/image/img/img5.jpg">
+							<div class="text">Ser un excelente lugar para trabajar, en donde nuestro personal se inspire para dar lo mejor de sí.</div>
+						</figure>
+					</div>
+				</article>
+			</div>
 		</section>
 
-		<section class="contenido">
+		<div class="rt-top"><h1>Grupo Fares</h1></div>
+
+		<section class="wrap">
 
 			<article class="item">
-				<figure><img src="static/icons/png/Watches.png"></figure>
+				<div class="hexagono"><span class="icon-clock"></span></div>
 				<p>Estamos comprometidos con la calidad para nuestros clientes. Puntuales y responsables para ofrecer un servio de excelencia</p>
 				
 			</article>
-			<!--<article class="item">
-				<figure><img src="static/icons/png/Pensils.png"></figure>
-				<p>Con nuestros servicios propiciamos el desarrollo y mejoramos la calidad de vida de la colectividad, hoy y siempre.</p>
-				
-			</article>-->
 			<article class="item">
-				<figure><img src="static/icons/png/Compas.png"></figure>
+				<div class="hexagono"><span class="icon-compass"></span></div>
 				<p>Buscamos el mejoramiento continuo, para constituirnos en el mejor referente del desarrollo local, regional y nacional.</p>
 				
 			</article>
 			<article class="item">
-				<figure><img src="static/icons/png/Infinity-Loop.png"></figure>
+				<div class="hexagono"><span class="icon-spinner"></span></div>
 				<p>Ofrecemos servicios y productos de calidad, con eficiencia, eficacia y a precios competitivos. </p>
 				
 			</article>
@@ -80,20 +86,38 @@
 	<footer>
 		<section class="contacto">
 	    	<h3 class="title">Contacto</h3>
-	    	<div class="info">
-	    		<p class="ubica"></p>
-	     		<p class="address"> Dirrección: Av. Ejercito Mexicano # 2004 Int. 234
+	    	<article class="info">
+	    		<p class="ubica">Oficina Mazatlán</p>
+	     		<p class="address"> Dirección: Av. Ejercito Mexicano # 2004 Int. 234
 				Col. Insurgentes, Mazatlán, Sinaloa. C.P 82018</p>
 	     		<p class="mail"> Correo: <a href="mailto:ventas@grupofares.com.mx">ventas@grupofares.com.mx</a></p>
 	      		<p class="phone"> Teléfono: <span class="numero"><a href="tel:6692110966">669-211-0966</a></span></p>
-	      		<p class="phone"> Guadalajara: <span class="numero"><a href="tel:3338370800">(33) 3837-0800</a></span></p>
-	      		
-	    	</div>
+	      	</article>
+	      	<article class="info">
+	      		<p class="ubica">Corporativo Guadalajara</p>
+	      		<p class="address"> Dirección: Av. Rio Nilo 2888, Col Jardines de la Paz, Guadalajara, Jalisco, C.P 44860</p>
+	     		<p class="mail"> Correo: <a href="mailto:gdl@grupofares.com.mx">gdl@grupofares.com.mx</a></p>
+	      		<p class="phone"> Teléfono: <span class="numero"><a href="tel:3338370800">(33) 3837-0800</a></span></p>
+	    	</article>
 	  	</section>
 	</footer>
 
 	<script src="static/js/jquery-1.11.0.min.js"></script>
 	<script src="static/js/menu.js"></script>
+	<script src="static/js/jquery.slides.min.js"></script>
+
+	<script>
+	    $(function() {
+	      	$('#slides').slidesjs({
+	        	play: {
+		          active: true,
+		          auto: true,
+		          interval: 5000,
+		          swap: true
+	        	}
+	      	});
+	    });
+  	</script>
 
 </body>
 </html>
