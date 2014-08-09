@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="stylesheet" href="../static/css/base.css">
 	<link rel="shortcut icon" href="http://grupofares.com.mx/favicon.ico" />
 	<title>Grupo Fares</title>
 
@@ -17,13 +18,13 @@
 			<div class="header">
 	      		<div class="logo">
 		        	<figure>
-		          		<img src="static/image/logo.png" alt="Grupo Fares">
+		          		<img src="../static/image/logo.png" alt="Grupo Fares">
 		        	</figure>
 	      		</div>
 	      		<div class="corp">
 		        	<figure>
-		          		<img src="static/image/logos/proveecom.gif" alt="Grupo Fares">
-		          		<img src="static/image/logos/saar.gif" alt="Grupo Fares">
+		          		<img src="../static/image/logos/proveecom.gif" alt="Grupo Fares">
+		          		<img src="../static/image/logos/saar.gif" alt="Grupo Fares">
 		        	</figure>
 	      		</div>
 	      		<div id="boton">
@@ -43,47 +44,14 @@
 
 	<main>
 		<section class="contenido relative">
-
-			<div class="banner">
-				<div id="slides">
-					<article class="imgtext">
-						<div class="box">					
-							<figure class="relative">
-								<img src="static/image/img/img4.jpg">
-								<div class="text">Compruebe nuestro servicios, el cliente nuestro mayor compromiso.</div>
-							</figure>
-						</div>
-					</article>
-					<article class="imgtext">
-						<div class="box">					
-							<figure class="relative">
-								<img src="static/image/img/img5.jpg">
-								<div class="text">Ser un excelente lugar para trabajar, en donde nuestro personal se inspire para dar lo mejor de sí.</div>
-							</figure>
-						</div>
-					</article>
-				</div>
+			<div class="rt-top"><h1>Productos</h1></div>
+		
+			<div class="categorias">
+				<a href="/bombas"><div class="categoria">Bombas</div></a>
+				<a href="/medidores"><div class="categoria">Medidores</div></a>
+				<a href="/filtros"><div class="categoria">Filtros</div></a>
+				<a href="/accesorios"><div class="categoria">Accesorios</div></a>
 			</div>
-
-		</section>
-
-		<section class="wrap">
-
-			<article class="item">
-				<div class="hexagono"><span class="icon-clock"></span></div>
-				<p>Estamos comprometidos con la calidad para nuestros clientes. Puntuales y responsables para ofrecer un servio de excelencia</p>
-				
-			</article>
-			<article class="item">
-				<div class="hexagono"><span class="icon-compass"></span></div>
-				<p>Buscamos el mejoramiento continuo, para constituirnos en el mejor referente del desarrollo local, regional y nacional.</p>
-				
-			</article>
-			<article class="item">
-				<div class="hexagono"><span class="icon-spinner"></span></div>
-				<p>Ofrecemos servicios y productos de calidad, con eficiencia, eficacia y a precios competitivos. </p>
-				
-			</article>
 		</section>
 	</main>
 
@@ -106,22 +74,8 @@
 	  	</section>
 	</footer>
 
-	<script src="static/js/jquery-1.11.0.min.js"></script>
-	<script src="static/js/menu.js"></script>
-	<script src="static/js/jquery.slides.min.js"></script>
-
-	<script>
-	    $(function() {
-	      	$('#slides').slidesjs({
-	        	play: {
-		          active: true,
-		          auto: true,
-		          interval: 5000,
-		          swap: true
-	        	}
-	      	});
-	    });
-  	</script>
+	<script src="../static/js/jquery-1.11.0.min.js"></script>
+	<script src="../static/js/menu.js"></script>
 
 </body>
 </html>

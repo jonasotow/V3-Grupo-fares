@@ -11,6 +11,7 @@ rojo = #DF392E
 gris_tenue = #f2f2f2
 gris_bajito = #d7d7d7 
 fondo = #f2f2f2
+background = #eae6e5
 a 
 	text-decoration none
 
@@ -23,10 +24,8 @@ ul
 	margin 0
 	padding 0
 
-header
-	border-bottom 3px solid naranja
 main 
-	background-image url(../../static/image/backgrounds/bgmuro.png)
+	background #EAE6E5
 
 footer
 	background-color cafe
@@ -53,9 +52,47 @@ footer
 				color naranja
 			a 
 				color link
+.boxs
+	padding 2em 0 1em 0
+	width 90%
+	margin  0 auto
+.corp
+	margin-left 5px
+	padding-top 25px
+	float right
+	background blanco
+	border-radius 0 0 5px 5px
+	figure
+		padding-bottom 5px
+		img
+			display block
+			width 130px
+			float left
+.categoria
+	display inline-block
+	padding 62px 1em 62px 1em
+	border-radius 50%
+	background blanco
+	width 114px
+	text-align center
+	color naranja
+	margin-right .5em
+	margin-left .5em
+	margin-bottom .5em
+	background-image url(../../static/image/backgrounds/poly.png)
+	background-position 50% 50%
+	&:hover
+		background-color cafe
+
+.categorias
+	width 100%
+	padding-top 2em
+	padding-bottom 1em 
+	margin 0 auto
+	text-align center
 
 .container
-	margin  0 auto
+	margin 0 auto
 	width 90%
 
 .contenido
@@ -63,6 +100,47 @@ footer
 	overflow hidden
 	text-align center
 	margin 0 auto
+.form
+	.formulario
+		fieldset
+			border-radius 5px
+			.control-group
+				label
+					display block
+					font-weight bold
+					color texto1
+				input
+				textarea
+					border-radius 5px
+					background-color #ffffff
+					border 1px solid #cccccc
+					padding 4px 6px
+			.opcion
+				input
+				textarea
+					border-radius 5px
+					background-color #ffffff
+					border 1px solid #cccccc
+					padding 4px 6px
+				.sent
+					background-color #5cb85c
+					border #4cae4c
+					color blanco
+					padding 7px 9px
+					text-shadow rgba(0,0,0,0.5) 2px 2px 5px
+					&:hover
+						background-color #449d44
+						border #398439
+						
+				.reset
+					background-color #d9534f
+					border #d43f3a
+					color blanco
+					padding 7px 9px
+					text-shadow rgba(0,0,0,0.5) 2px 2px 5px
+					&:hover
+						background-color #c9302c
+						border #ac2925
 
 .round
 	border-radius 50%
@@ -82,17 +160,17 @@ footer
 	top 20px
 
 .logo
-	display inline-block
+	display block
 	margin-left 5px
 	padding-top 5px
 	background blanco
+	border-radius 0 0 5px 5px
 	figure
 		padding-bottom 5px
-		
 		img
 			display block
-			margin 0 auto
 			width 80px
+
 .imgtext
 	display inline-block
 	.box
@@ -158,45 +236,49 @@ footer
 			border-left 100px solid transparent
 			border-right 100px solid transparent
 			border-top 50px solid #ffffff
+.justify
+	text-align justify
 
 .menu
 	background blanco
 	display none
-
-	.tab
-		text-align center
-		text-transform uppercase
-		list-style none
-		background #f2f2f2
-		&:nth-child(4n+1)
-			border-radius 10px 10px 0 0
-
-		a
-			color naranja
-			height 50px
-			line-height 50px
-			display block
-			
-			&:hover
-				background cafe
+	.lista
+		.tab
+			text-align center
+			text-transform uppercase
+			list-style none
+			background #f2f2f2
+			&:nth-child(4n+1)
 				border-radius 10px 10px 0 0
-				color #blanco
+
+			a
+				color naranja
+				height 50px
+				line-height 50px
+				display block
+				
+				&:hover
+					background cafe
+					border-radius 10px 10px 0 0
+					color #blanco
 .rt-top
-	background-color #FB6058
+	background-color cafe
 	background-image url(../../static/image/backgrounds/poly.png)
 	background-position 50% 50%
 	height 100px
 	width 100%
+	overflow hidden
 	h1 
-		color blanco
+		color naranja 
 		margin 0
 		padding-top 30px
 		text-align center
 		text-shadow rgba(0,0,0,0.9) 3px 3px 5px
 		vertical-align middle
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family 'Open Sans', sans-serif
+		font-weight 300
 .wrap
-	padding-top 2em
+	padding-top 1em
 	overflow hidden
 	text-align center
 	background #EAE6E5
@@ -212,6 +294,7 @@ footer
 					border-radius 0 0 10px 10px
 
 @media screen and (min-width: 800px)
+
 	
 	footer
 		.contacto
@@ -220,39 +303,72 @@ footer
 			.info
 				display inline-block
 				width 48%
+	.boxs
+		width 70%
 
 	.contenido
+		display block
+		margin 0 auto
+		overflow hidden
+		text-align center
+		width 100%
+
+	.banner
 		width 430px
 		height 268px
+		margin 0 auto
 
 	.button-menu
-		display none 
+		display none
+
+	.container
+		width 95%
+
+	.header
+		background blanco
+		height 100px
+		.logo
+			float left
+			padding 0
+			figure
+				padding-bottom 5px
+				img
+					display block
+					width 200px
+					background blanco
+					border-radius 10px
 	.menu
 		display block
-		overflow hidden
-		width 560px
-		top 0
-		right 50px
-		margin-top -10px
-		position absolute
 		border-radius 5px
-		.tab
-			float left
-			list-style none
-			border-radius 5px
-			a 
-				color naranja
-				cursor pointer
-				display block
-				padding 27px
-				text-transform uppercase
-				background blanco
-				border-radius 5px
-				&:hover
+		margin-bottom 2em
+		height 104px
+		width 550px
+		position absolute 
+		top 100px
+		right 0 
+		background background
+
+		.lista
+			display block
+
+			.tab
+				float left
+				list-style none
+				a 
+					color naranja
+					cursor pointer
+					padding 27px
+					text-transform uppercase
 					border-radius 5px
-	.contenido
-		text-align center
-		display block
+					display block
+					background background
+					border-top solid transparent
+					border-radius 0 0 0 0  
+
+					&:hover
+						border-radius 0 0 10px 10px 
+						border-top solid naranja
+
 	.item
 		width 17rem
 		margin-bottom 1em
@@ -260,6 +376,13 @@ footer
 
 		&:nth-child(even)
 			margin-right 1em
+	.rt-top
+		width 50%
+		border-radius 0 5px 5px 0
+		h1
+			text-align right
+			padding-right 20px
+
 
 
 
