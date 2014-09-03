@@ -8,88 +8,77 @@
 	<link rel="stylesheet" href="static/css/base.css">
 	<link rel="shortcut icon" href="http://grupofares.com.mx/favicon.ico" />
 	<title>Grupo Fares</title>
-
 </head>
 <body>
 	
 	<header>
-		<div class="container">
-			<div class="header">
-	      		<div class="logo">
-		        	<figure>
-		          		<img src="static/image/logo.png" alt="Grupo Fares">
-		        	</figure>
-	      		</div>
-	      		<div class="corp">
-		        	<figure>
-		          		<img src="static/image/logos/proveecom.gif" alt="Grupo Fares">
-		          		<img src="static/image/logos/saar.gif" alt="Grupo Fares">
-		        	</figure>
-	      		</div>
-	      		<div id="boton">
-	      			<a href="#" class="display-menu button-menu icon-menu" ></a>
-	    		</div>
+		<div class="logos">
+		    <figure class="logo">
+		    	<img src="static/image/logo.png" alt="Grupo Fares">
+		    </figure>
+		    <figure class="corp">
+		        <img src="static/image/logos/proveecom.gif" alt="Grupo Fares">
+		        <img src="static/image/logos/saar.gif" alt="Grupo Fares">
+		    </figure>
+		</div>
+		<div class="menus">
+			<div id="boton">
+      			<a href="#" class="display-menu button-menu icon-menu"></a>
     		</div>
-      		<nav class="menu" id="menu">
-		        <ul class="lista">
-		          <li class="tab"><a href="/">Inicio</a></li>
-		          <li class="tab"><a href="/nosotros/">Nosotros</a></li>
-		          <li class="tab"><a href="/productos/">Productos</a></li>
-		          <li class="tab"><a href="/contacto/">Contacto</a></li>
-		        </ul>  
-      		</nav>
-    	</div>
+	      	<nav class="menu" id="menu">
+			    <ul class="lista">
+			        <li class="tab"><a href="/">Inicio</a></li>
+			        <li class="tab"><a href="/nosotros/">Nosotros</a></li>
+			        <li class="tab"><a href="/productos/">Productos</a></li>
+			        <li class="tab"><a href="/contacto/">Contacto</a></li>
+			    </ul>  
+	      	</nav>
+	    </div>
 	</header>
 
 	<main>
-		<section class="contenido relative">
+		<section class="wrap fondopapel">
 
-			<div class="banner">
-				<div id="slides">
-					<article class="imgtext">
-						<div class="box">					
-							<figure class="relative">
-								<img src="static/image/img/img4.jpg">
-								<div class="text">Compruebe nuestro servicios, el cliente nuestro mayor compromiso.</div>
-							</figure>
-						</div>
-					</article>
-					<article class="imgtext">
-						<div class="box">					
-							<figure class="relative">
-								<img src="static/image/img/img5.jpg">
-								<div class="text">Ser un excelente lugar para trabajar, en donde nuestro personal se inspire para dar lo mejor de sí.</div>
-							</figure>
-						</div>
-					</article>
-				</div>
-			</div>
+			<ul class="slider">
 
+	    		<li class="items">
+	    			<figure class="image relative">
+		    			<img src="static/image/gf/img1.jpg" alt="">
+		    			<p>
+		    				Compruebe nuestro servicios, el cliente nuestro mayor compromiso.
+		    			</p>
+	    			</figure>
+	    		</li>
+	    		<li class="items"> 
+	    			<figure class="image relative">
+		    			<img src="static/image/gf/img2.jpg" alt="">
+		    			<p>
+		    				Grupo Fares es un grupo de empresas Mexicanas dedicadas en abastecer al sector constructor Gasolinero 
+		    			</p>
+	    			</figure>
+	    		</li>
+	    		
+	    	</ul>
+			
 		</section>
-
-		<section class="wrap">
-
+		<section class="wrap ">
 			<article class="item">
 				<div class="hexagono"><span class="icon-clock"></span></div>
 				<p>Estamos comprometidos con la calidad para nuestros clientes. Puntuales y responsables para ofrecer un servio de excelencia</p>
-				
 			</article>
 			<article class="item">
 				<div class="hexagono"><span class="icon-compass"></span></div>
 				<p>Buscamos el mejoramiento continuo, para constituirnos en el mejor referente del desarrollo local, regional y nacional.</p>
-				
 			</article>
 			<article class="item">
 				<div class="hexagono"><span class="icon-spinner"></span></div>
 				<p>Ofrecemos servicios y productos de calidad, con eficiencia, eficacia y a precios competitivos. </p>
-				
 			</article>
 		</section>
 	</main>
-
 	<footer>
 		<section class="contacto">
-	    	<h3 class="title">Contacto</h3>
+	    	<div class="title">Contacto</div>
 	    	<article class="info">
 	    		<p class="ubica">Oficina Mazatlán</p>
 	     		<p class="address"> Dirección: Av. Ejercito Mexicano # 2004 Int. 234
@@ -98,7 +87,7 @@
 	      		<p class="phone"> Teléfono: <span class="numero"><a href="tel:6692110966">669-211-0966</a></span></p>
 	      	</article>
 	      	<article class="info">
-	      		<p class="ubica">Corporativo Guadalajara</p>
+	      		<p class="ubica">Oficina Guadalajara</p>
 	      		<p class="address"> Dirección: Av. Rio Nilo 2888, Col Jardines de la Paz, Guadalajara, Jalisco, C.P 44860</p>
 	     		<p class="mail"> Correo: <a href="mailto:gdl@grupofares.com.mx">gdl@grupofares.com.mx</a></p>
 	      		<p class="phone"> Teléfono: <span class="numero"><a href="tel:3338370800">(33) 3837-0800</a></span></p>
@@ -108,20 +97,9 @@
 
 	<script src="static/js/jquery-1.11.0.min.js"></script>
 	<script src="static/js/menu.js"></script>
-	<script src="static/js/jquery.slides.min.js"></script>
+	<script src="static/js/slider.js"></script>
 
-	<script>
-	    $(function() {
-	      	$('#slides').slidesjs({
-	        	play: {
-		          active: true,
-		          auto: true,
-		          interval: 5000,
-		          swap: true
-	        	}
-	      	});
-	    });
-  	</script>
+
 
 </body>
 </html>
