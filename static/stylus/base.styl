@@ -21,6 +21,8 @@ body
 	font-family 'Open Sans', sans-serif
 	font-weight 300
 	font-size 16px
+	background cafe
+
 header
 	position relative
 	overflow hidden
@@ -132,7 +134,44 @@ footer
 	overflow hidden
 .wrap
 	text-align center
+.title
+	font-size 2em
+	font-weight bold
+	padding-top 1em
+	padding-bottom 0
+	text-transform uppercase
 
+.productos
+	.elements
+		min-height 240px
+		padding-top 1em 
+		padding-left 5%
+		padding-right 5%
+		padding-bottom 1em
+		float left
+		background-image url("../../static/image/backgrounds/bgpapel.png")
+		figure
+			width 40%
+			float right
+			text-align center
+			margin 0 2em 0 1em
+			img
+				vertical-align top
+				width 150px
+				border-radius 5%
+				box-shadow rgba(0,0,0,0.3) 3px 3px 5px
+		.details
+			.name
+			.brand
+			.model
+				text-align left
+				span
+					font-weight bold
+		.description
+			text-align justify
+			span
+				font-weight bold
+			
 .boxs
 	padding 2em 0 1em 0
 	width 90%
@@ -148,7 +187,7 @@ footer
 	border-radius 50%
 	color naranja
 	display inline-block
-	margin-top 50px
+	margin-top 30px
 	margin-bottom 61px
 	margin-left .5em
 	margin-right .5em
@@ -161,7 +200,7 @@ footer
 
 .categorias
 	width 100%
-	padding-top 2em
+	padding-top 0
 	padding-bottom 1em 
 	margin 0 auto
 	text-align center
@@ -346,7 +385,10 @@ footer
 
 				img
 					opacity 0.5
-			
+	.productos
+		.elements
+			width 40%
+		
 	footer
 		.contacto
 			width 100%
